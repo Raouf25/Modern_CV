@@ -1,0 +1,194 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{casual}                             % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue}                               % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+\name{Abderraouf}{MAKHLOUF}
+\title{Développeur Java/JEE}                               % optional, remove / comment the line if not wanted
+%\address{street and number}{postcode city}{country}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
+\phone[mobile]{+33~07~81~43~98~81}                   % optional, remove / comment the line if not wanted
+%\phone[fixed]{+2~(345)~678~901}                    % optional, remove / comment the line if not wanted
+%\phone[fax]{+3~(456)~789~012}                      % optional, remove / comment the line if not wanted
+\email{makhlouf.raouf@gmail.com}                               % optional, remove / comment the line if not wanted
+%\homepage{www.johndoe.com}                         % optional, remove / comment the line if not wanted
+%\extrainfo{additional information}                 % optional, remove / comment the line if not wanted
+\photo[64pt][0.4pt]{picture2}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+\quote{4 Années d’expérience \\ Oracle Certified Associate, Java SE 7 Programmer}                                 % optional, remove / comment the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+\section{Formation}
+\cventry{2013--2014}{Master 2}{spécialité développement de logiciels}{}{\textit{Université Paul Sabatier (Toulouse III), France}}{}  % arguments 3 to 6 can be left empty
+\cventry{2010--2013}{Diplôme ingénieur en informatique}{spécialité informatique pour la finance}{}{\textit{Ecole Nationale des Sciences Informatiques, Tunisie}}{}
+\cventry{2008--2010}{Diplôme d’institut préparatoire aux études d’ingénieurs}{spécialité Physique-Technologiques}{}{\textit{Institut Préparatoire aux Etudes d’Ingénieurs de Manar, Tunisie}}{}
+
+\section{Compétences techniques}
+\cvitem{Langage}{Java, sql}
+\cvitem{Frameworks}{Spring Boot, Spring Data, SpringBatch, Spring Security, Hibernate, Liquibase, Swagger}
+\cvitem{Otuils}{IntelliJ, Git, Maven, Jenkins, Postman}
+\cvitem{Méthodologie}{Agile scrum, Développement Dirigé par les Tests, Cycle en V}
+
+
+
+
+\section{Experience professionnelle}
+\subsection{Ineat -- Consultant Développeur Java/JEE}
+\cventry{10/17--01/18}{Gestion des rendez-vous des médecins 'Vitodoc'}{Vitodoc}{Lille}{}{ %
+Développer une API REST sécurisée pour :%
+\begin{itemize}%
+\item Gérer les cabinets médicales.
+\item Adresser les patients à un autre médecin spécialiste.
+\item Gérer les abonnements des médecins.
+\item Mise en place de solution de paiement en ligne Stripe.
+\item Extraire les statistiques sur le taux de remplissages.
+ \begin{itemize}%
+  \item Méthodologie de travail: DDT, Cycle en V
+  \item Environnement technique: Java 8, SQL, Spring Boot, Spring Security, Keycloak, Postman, Swagger, Liquibase, Git
+  \end{itemize}
+\end{itemize}}
+
+\cventry{07/17--09/17}{Gestion de lettre de crédit 'Gest'LC'}{Adeo}{Ronchin}{}{ %
+Automatiser des routines pour une application web :%
+\begin{itemize}%
+\item Conception de la base de données.
+\item Développement des batchs pour consommer les données de ESB (enterprise service bus).
+\item Développement des batchs pour alerter les acteurs par e-mail.
+ \begin{itemize}%
+  \item Méthodologie de travail: Agile scrum
+  \item Environnement technique: Java 8, SQL, Spring Boot, Spring Batch, Liquibase, GitLab
+  \end{itemize}
+\end{itemize}}
+
+\cventry{02/17--06/17}{Optimisation des coûts de transport maritime 'THETIS'}{Adeo}{Ronchin}{}{ %
+Concevoir et développer une application web pour :%
+\begin{itemize}%
+\item Développement de API REST pour calculer le costing nécessaire à ATLAS.
+\item Sécuriser les mises à jour des tarifs.
+\item Optimisation de temps de calcul des tarifs.
+\item Générer les prévisions de commandes, le fichier carrier split et permettre enfin le suivi opérationnel des compagnies maritimes.
+ \begin{itemize}%
+  \item Méthodologie de travail: Agile scrum
+  \item Environnement technique: Java 8, SQL, Spring Boot, Spring Data, Swagger, Liquibase, GitLab
+  \end{itemize}
+\end{itemize}}
+
+
+\subsection{Oceane consulting -- Consultant Développeur Java }
+\cventry{01/16--01/17}{Simulateur de déplacement de véhicule 'Connected Vehicle'}{Worldline}{Seclin}{}{ %
+Développer et maintenir une application web :%
+\begin{itemize}%
+\item Maintenace de API REST qui gère la suivie de consommation de carburant.
+\item Développement d’un outil multithread contrôlant la gestion des véhicules.
+\item Intégration de l’API NokiaHere pour définir des trajets aléatoires. 
+ \begin{itemize}%
+  \item Méthodologie de travail: Cycle en V
+  \item Environnement technique: Java 7, Spring 3, Hibernate, API REST, AngularJs
+  \end{itemize}
+\end{itemize}}
+\cventry{09/14--01/16}{Site e-commerce 'e-food Pologne'}{Auchan}{Lille}{}{ %
+Accompagnement des testeurs à la mise en œuvre d’une démarche de qualité :%
+\begin{itemize}%
+\item Spécification de plan de test fonctionnel.
+\item Implémentation des robots avec Robot Framework pour automatiser les tests fonctionnels coté front avec Selenium2Librar.
+\item Développement des scripts shell pour intégrer les fichiers de données coté back-end Hypris.
+  \begin{itemize}%
+  \item Méthodologie de travail: Agile scrum
+  \item Environnement technique: Jira, Git, Robot Framework, Selenium2Library, Hybris
+  \end{itemize}
+\end{itemize}}
+
+
+
+\section{Langues}
+%\cvitemwithcomment{Anglais}{Courant}{Toeic XXX}
+\cvitemwithcomment{Anglais}{Courant}{ }
+\cvitemwithcomment{Français}{Courant}{Bilangue}
+\cvitemwithcomment{Arabe}{Courant}{Langue natale}
+
+\section{Centre d'intérêts}
+\cvitem{Lecture}{L'Alchimiste "Paulo Coelho", Le Voleur d'ombres "Marc Levy",... }
+\cvitem{Voyage}{Belgique, Tchèque, Pays-Bas, ... }
+%\cvitem{Film}{V for Vendetta, Intouchables, Lucy, ...}
+
+
+%\subsection{Vocational}
+%\cventry{year--year}{Job title}{Employer}{City}{}{General description no longer than 1--2 %lines.\newline{}%
+%Detailed achievements:%
+%\begin{itemize}%
+%\item Achievement 1;
+%\item Achievement 2, with sub-achievements:
+%  \begin{itemize}%
+%  \item Sub-achievement (a);
+%  \item Sub-achievement (b), with sub-sub-achievements (don't do this!);
+%    \begin{itemize}
+%    \item Sub-sub-achievement i;
+%    \item Sub-sub-achievement ii;
+%    \item Sub-sub-achievement iii;
+%    \end{itemize}
+%  \item Sub-achievement (c);
+%  \end{itemize}
+%\item Achievement 3.
+%\end{itemize}}
+
+
+
+
+
+% Publications from a BibTeX file without multibib
+%  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
+%  to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
+\nocite{*}
+\bibliographystyle{plain}
+\bibliography{publications}                        % 'publications' is the name of a BibTeX file
+
+% Publications from a BibTeX file using the multibib package
+%\section{Publications}
+%\nocitebook{book1,book2}
+%\bibliographystylebook{plain}
+%\bibliographybook{publications}                   % 'publications' is the name of a BibTeX file
+%\nocitemisc{misc1,misc2,misc3}
+%\bibliographystylemisc{plain}
+%\bibliographymisc{publications}                   % 'publications' is the name of a BibTeX file
+
+\clearpage
+
+\end{document}
+
+
+%% end of file `template.tex'.
