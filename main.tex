@@ -1,81 +1,155 @@
-%% start of file `template.tex'.
-%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
-%
-% This work may be distributed and/or modified under the
-% conditions of the LaTeX Project Public License version 1.3c,
-% available at http://www.latex-project.org/lppl/.
-
-
-\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+\documentclass[11pt,a4paper]{moderncv}
 
 % moderncv themes
-\moderncvstyle{casual}                             % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
-\moderncvcolor{blue}                               % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
-%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
-%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+%\moderncvtheme[blue]{casual}                 % optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
+\moderncvtheme[blue]{classic}                % idem
 
+\usepackage[T1]{fontenc}
 % character encoding
-\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
-%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+\usepackage[utf8x]{inputenc}                   % replace by the encoding you are using
+\usepackage[italian]{babel}
 
 % adjust the page margins
-\usepackage[scale=0.75]{geometry}
-%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
-%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+\usepackage[scale=0.775]{geometry}
+\recomputelengths                             % required when changes are made to page layout lengths
+
+\fancyfoot{} % clear all footer fields
+\fancyfoot[LE,RO]{\thepage}           % page number in "outer" position of footer line
+\fancyfoot[RE,LO]{\footnotesize } % other info in "inner" position of footer line
 
 % personal data
-\name{Abderraouf}{MAKHLOUF}
-\title{Développeur Java/JEE}                               % optional, remove / comment the line if not wanted
-%\address{street and number}{postcode city}{country}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
-\phone[mobile]{+33~07~81~43~98~81}                   % optional, remove / comment the line if not wanted
-%\phone[fixed]{+2~(345)~678~901}                    % optional, remove / comment the line if not wanted
-%\phone[fax]{+3~(456)~789~012}                      % optional, remove / comment the line if not wanted
-\email{makhlouf.raouf@gmail.com}                               % optional, remove / comment the line if not wanted
-%\homepage{www.johndoe.com}                         % optional, remove / comment the line if not wanted
-%\extrainfo{additional information}                 % optional, remove / comment the line if not wanted
-\photo[64pt][0.4pt]{picture2}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
-\quote{4 Années d’expérience \\ Oracle Certified Associate, Java SE 7 Programmer}                                 % optional, remove / comment the line if not wanted
+\firstname{Abderraouf}
+\familyname{\\ \\Makhlouf}
+\title{Développeur full stack}               % optional, remove the line if not wanted
+%\address{via Palazzon 7, Riese Pio X}{31039 Treviso, Italy}    % optional, remove the line if not wanted
+\mobile{+33~07~81~43~98~81}                    % optional, remove the line if not wanted
+%\phone{+385 92 2201317}                      % optional, remove the line if not wanted
+%\fax{312 996 1491}                          % optional, remove the line if not wanted
+\email{makhlouf.raouf@gmail.com}                      % optional, remove the line if not wanted
+%\extrainfo{additional information (optional)} % optional, remove the line if not wanted
+\photo[84pt]{picture2}          % '64pt' is the height the picture must be resized to and 'picture' is the name of the picture file; optional, remove the line if not wanted
+\\
+\\
+%\quote{"Success is the ability to go from failure to failure without losing your enthusiasm." -- Winston Churchill}                 % optional, remove the line if not wanted
 
-% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
-%\makeatletter
-%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
-%\makeatother
-%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
-
-% bibliography with mutiple entries
-%\usepackage{multibib}
-%\newcites{book,misc}{{Books},{Others}}
 %----------------------------------------------------------------------------------
 %            content
 %----------------------------------------------------------------------------------
 \begin{document}
-%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
-%-----       resume       ---------------------------------------------------------
-\makecvtitle
+\maketitle
 
-\section{Formation}
-\cventry{2013--2014}{Master 2}{spécialité développement de logiciels}{}{\textit{Université Paul Sabatier (Toulouse III), France}}{}  % arguments 3 to 6 can be left empty
-\cventry{2010--2013}{Diplôme ingénieur en informatique}{spécialité informatique pour la finance}{}{\textit{Ecole Nationale des Sciences Informatiques, Tunisie}}{}
-\cventry{2008--2010}{Diplôme d’institut préparatoire aux études d’ingénieurs}{spécialité Physique-Technologiques}{}{\textit{Institut Préparatoire aux Etudes d’Ingénieurs de Manar, Tunisie}}{}
+\vspace{-10mm}
+
+%Section
+%\section{Info}
+%\cvcomputer{Born}{\small March 30th, 1985 at Zagreb (Croatia)\normalsize}{Citizenship}{\small Croatian\normalsize}
+%\cvcomputer{Additional Address}{J.Salvadora 14, Ciglenica, 44320 Kutina, Croatia}{Driving License}{\small B\normalsize}
+%\cvcomputer{LinkedIn}{\small \url{http://it.linkedin.com/in/goivan}\normalsize}{Elance}{\small \url{http://ntrp.elance.com}\normalsize}
+%\cvcomputer{Blog}{\small \url{http://ntrpivan.blogspot.com}\normalsize}{Skype}{\small ivan.ntrp}
+
+%\vspace{-4mm}
+
+%Section
+%\section{Desidered Employment and Current Skills}
+%\cvline{}{\Large System Administrator, DBA, Programmer, Consultant}
+%\cvline{}{\small Over the years, thanks to my thirst for knowledge, I have gained extensive experience in computer science ranging from operating systems to programming languages ​​and platforms upon which the latter are based. Along this path I have continued to improve my approach to problems always trying to implement optimal, generalized and reusable solutions (OOP, Design Patterns). In some academic work opportunities I've been able to demonstrate excellent teamwork skills and capability to collaborate with external groups. Another virtue I possess is the ability to solve almost any computer problem thanks to the excellent information gathering skills and the many years of experience in the computer science field.}
+
+%\vspace{-4mm}
+\vspace{1.5mm}
+
+
+%Section
+
 
 \section{Compétences techniques}
-\cvitem{Langage}{Java, sql}
-\cvitem{Frameworks}{Spring Boot, Spring Data, SpringBatch, Spring Security, Hibernate, Liquibase, Swagger}
-\cvitem{Otuils}{IntelliJ, Git, Maven, Jenkins, Postman}
-\cvitem{Méthodologie}{Agile scrum, Développement Dirigé par les Tests, Cycle en V}
+\cvitem{Langage}{Java 8, Javascript, SQL}
+\cvitem{Frameworks}{Spring Boot, Spring, Hibernate, Liquibase, VueJs}
+\cvitem{Otuils}{Kafka, Git, Maven, Jenkins, Sonar, Doker, Gitlab, github }
+\cvitem{Méthodologie}{Agile scrum, TDD, BDD}
 
 
+\vspace{-3mm}
 
-
+%Section
 \section{Experience professionnelle}
-\subsection{Ineat -- Consultant Développeur Java/JEE}
-\cventry{10/17--01/18}{Gestion des rendez-vous des médecins 'Vitodoc'}{Vitodoc}{Lille}{}{ %
+
+\subsection{Ineat -- Consultant Développeur Full stack}
+
+
+
+\cventry{10/19--03/20}{Mise en place d'une application B2B pour calculer les prix intersociétés}{Adeo}{Ventoux}{}{  
+\begin{itemize}%
+\item Conception et Développement  d'application en architecture micro-services 
+\item Implémenter l'échange de flux Kafka
+\item Assurer la CI/CD backend et frontend
+\begin{itemize}%
+  \item Dockerizer le process de deploiment  
+  \item	Sécuriser l'application avec OAuth2 
+  \item	Implémenter frontend 
+\end{itemize}
+ \begin{itemize}%
+  \item Environnement technique: VueJs, Javascript, Kafka, Java 8, Docker, Spring Boot, Spring Security, Swagger, Open Api, Git, Gitlab, Github
+  \end{itemize}
+\end{itemize}}
+
+
+
+
+\cventry{04/19--09/19}{Mise en place d'un portail web pour noter les fournisseurs }{Adeo}{Ronchin}{}{ %
+%Développer une API REST sécurisée pour :%
+\begin{itemize}%
+\item Accompagnement des développeurs junior
+\item Maintenance applicative
+\item Développement des nouvelles fonctionnalités:
+\begin{itemize}%
+  \item Approvisionner automatiquement les achats 
+  \item	Générer les statistiques associées à l'approvisionnement 
+  \item	Importer/Expoter des fichiers excel 
+\end{itemize}
+ \begin{itemize}%
+  \item Environnement technique: Javascript, Java 8, SQL, Spring Boot, Spring Security, Swagger, Liquibase, Git
+  \end{itemize}
+\end{itemize}}
+
+
+
+
+
+
+
+
+
+
+\cventry{02/18--03/19}{Mise en place d'un portail web pour gérer l'infra-réseau}{Web Center Axa}{wasquehal}{}{ %
+%Développer une API REST sécurisée pour :%
+\begin{itemize}%
+\item Conception et développement d’une API REST en java 8 avec la framework Spring Boot 
+\item Maintenance d'un legacy code en javascript vanilla et SQL
+\item Développement des nouvelles fonctionnalités coté front en VueJs:
+\begin{itemize}%
+  \item Instanciation des machines virtuelles
+  \item	Automatisation de load-balancing multi-port 
+  \item	Création d’espace partagé en cloud 
+\end{itemize}
+\item Mise en place des pratiques d'ingénierie (TDD, BDD, revue de code, refactoring legacy, Clean Code ...)
+ \begin{itemize}%
+  \item Méthodologie de travail: DDT, BDD
+  \item Environnement technique: VueJs, Javascript Vanilla, Java 8, SQL, Spring Boot, Spring Security,  Postman, Swagger, Liquibase, Git
+  \end{itemize}
+\end{itemize}}
+
+
+
+
+
+
+\cventry{10/17--01/18}{Gestion des rendez-vous pour les médecins 'Vitodoc'}{Vitodoc}{Lille}{}{ %
 Développer une API REST sécurisée pour :%
 \begin{itemize}%
 \item Gérer les cabinets médicales.
 \item Adresser les patients à un autre médecin spécialiste.
 \item Gérer les abonnements des médecins.
-\item Mise en place de solution de paiement en ligne Stripe.
+\item Mise en place d'une solution de paiement en ligne Stripe.
 \item Extraire les statistiques sur le taux de remplissages.
  \begin{itemize}%
   \item Méthodologie de travail: DDT, Cycle en V
@@ -83,8 +157,8 @@ Développer une API REST sécurisée pour :%
   \end{itemize}
 \end{itemize}}
 
-\cventry{07/17--09/17}{Gestion de lettre de crédit 'Gest'LC'}{Adeo}{Ronchin}{}{ %
-Automatiser des routines pour une application web :%
+\cventry{07/17--09/17}{Gestion des lettres de crédit 'Gest'LC'}{Adeo}{Ronchin}{}{ %
+Automatiser des routines pour la gestion des lettres de crédit(moyen de paiement inter-bancaire) :%
 \begin{itemize}%
 \item Conception de la base de données.
 \item Développement des batchs pour consommer les données de ESB (enterprise service bus).
@@ -95,13 +169,15 @@ Automatiser des routines pour une application web :%
   \end{itemize}
 \end{itemize}}
 
+
+
 \cventry{02/17--06/17}{Optimisation des coûts de transport maritime 'THETIS'}{Adeo}{Ronchin}{}{ %
-Concevoir et développer une application web pour :%
+Conception et développement d’une application web pour l’optimisation des coûts de transport maritime:%
 \begin{itemize}%
-\item Développement de API REST pour calculer le costing nécessaire à ATLAS.
-\item Sécuriser les mises à jour des tarifs.
-\item Optimisation de temps de calcul des tarifs.
-\item Générer les prévisions de commandes, le fichier carrier split et permettre enfin le suivi opérationnel des compagnies maritimes.
+\item Calculer les frais de port en se basant sur des normes mondiales de logistique « ATLAS »
+\item Conception d’une base de données permettant de sécuriser les mises à jour des tarifs de transport
+\item Réduire le temps de calcul des tarifs 
+\item Générer les prévisions de commandes afin de faire le suivi opérationnel des compagnies maritimes. 
  \begin{itemize}%
   \item Méthodologie de travail: Agile scrum
   \item Environnement technique: Java 8, SQL, Spring Boot, Spring Data, Swagger, Liquibase, GitLab
@@ -109,16 +185,23 @@ Concevoir et développer une application web pour :%
 \end{itemize}}
 
 
+
+
+
+
+
+
+
 \subsection{Oceane consulting -- Consultant Développeur Java }
-\cventry{01/16--01/17}{Simulateur de déplacement de véhicule 'Connected Vehicle'}{Worldline}{Seclin}{}{ %
+\cventry{01/16--01/17}{Simulateur de déplacement de véhicule 'Connected Vehicle'}{Atos Worldline}{Seclin}{}{ %
 Développer et maintenir une application web :%
 \begin{itemize}%
-\item Maintenace de API REST qui gère la suivie de consommation de carburant.
+\item Maintenance d'une API REST qui gère le suivie de consommation de carburant.
 \item Développement d’un outil multithread contrôlant la gestion des véhicules.
 \item Intégration de l’API NokiaHere pour définir des trajets aléatoires. 
  \begin{itemize}%
   \item Méthodologie de travail: Cycle en V
-  \item Environnement technique: Java 7, Spring 3, Hibernate, API REST, AngularJs
+  \item Environnement technique: Java 7, Spring 3, Hibernate, API REST, javascript
   \end{itemize}
 \end{itemize}}
 \cventry{09/14--01/16}{Site e-commerce 'e-food Pologne'}{Auchan}{Lille}{}{ %
@@ -135,60 +218,42 @@ Accompagnement des testeurs à la mise en œuvre d’une démarche de qualité :
 
 
 
+
+
+
+
+
+
+\newpage
+
+\subsection{Eurécia -- Ingénieur Recherche & Développement }
+\cventry{10/13--06/14}{ Automatisation d’une application web en mode SaaS}{Eurécia}{Toulous}{}{ %
+Améliorer le cycle de vie d'une application Software as a Service:%
+\begin{itemize}%
+\item Assurer la migration de gestionnaire de sources SVN à Git.
+\item Assurer la migration de système de buid de Ant à Maven.
+\item Mettre en place l'outil d'integration continue jenkins. 
+\item Analyse et optimisations de code Java à l’aide de plugin Sonar de Jenkins
+ \begin{itemize}%
+  \item Méthodologie de travail: Agil scrum
+  \item Environnement technique: svn, Git, Maven, Java, Jenkins, Sonar
+  \end{itemize}
+\end{itemize}}
+
+%Section
+\section{Formation}
+\cventry{2013--2014}{Master 2}{spécialité développement de logiciels}{}{\textit{Université Paul Sabatier (Toulouse III), France}}{}  % arguments 3 to 6 can be left empty
+\cventry{2010--2013}{Diplôme ingénieur en informatique}{spécialité informatique pour la finance}{}{\textit{Ecole Nationale des Sciences Informatiques, Tunisie}}{}
+\cventry{2008--2010}{Diplôme d’institut préparatoire aux études d’ingénieurs}{spécialité Physique-Technologiques}{}{\textit{Institut Préparatoire aux Etudes d’Ingénieurs de Manar, Tunisie}}{}
+
+\vspace{-3mm}
+
+%Section
 \section{Langues}
 %\cvitemwithcomment{Anglais}{Courant}{Toeic XXX}
 \cvitemwithcomment{Anglais}{Courant}{ }
-\cvitemwithcomment{Français}{Courant}{Bilangue}
-\cvitemwithcomment{Arabe}{Courant}{Langue natale}
-
-\section{Centre d'intérêts}
-\cvitem{Lecture}{L'Alchimiste "Paulo Coelho", Le Voleur d'ombres "Marc Levy",... }
-\cvitem{Voyage}{Belgique, Tchèque, Pays-Bas, ... }
-%\cvitem{Film}{V for Vendetta, Intouchables, Lucy, ...}
+\cvitemwithcomment{Français}{Courant}{ }
 
 
-%\subsection{Vocational}
-%\cventry{year--year}{Job title}{Employer}{City}{}{General description no longer than 1--2 %lines.\newline{}%
-%Detailed achievements:%
-%\begin{itemize}%
-%\item Achievement 1;
-%\item Achievement 2, with sub-achievements:
-%  \begin{itemize}%
-%  \item Sub-achievement (a);
-%  \item Sub-achievement (b), with sub-sub-achievements (don't do this!);
-%    \begin{itemize}
-%    \item Sub-sub-achievement i;
-%    \item Sub-sub-achievement ii;
-%    \item Sub-sub-achievement iii;
-%    \end{itemize}
-%  \item Sub-achievement (c);
-%  \end{itemize}
-%\item Achievement 3.
-%\end{itemize}}
-
-
-
-
-
-% Publications from a BibTeX file without multibib
-%  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
-%  to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
-\nocite{*}
-\bibliographystyle{plain}
-\bibliography{publications}                        % 'publications' is the name of a BibTeX file
-
-% Publications from a BibTeX file using the multibib package
-%\section{Publications}
-%\nocitebook{book1,book2}
-%\bibliographystylebook{plain}
-%\bibliographybook{publications}                   % 'publications' is the name of a BibTeX file
-%\nocitemisc{misc1,misc2,misc3}
-%\bibliographystylemisc{plain}
-%\bibliographymisc{publications}                   % 'publications' is the name of a BibTeX file
-
-\clearpage
 
 \end{document}
-
-
-%% end of file `template.tex'.
