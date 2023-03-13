@@ -1,0 +1,252 @@
+\documentclass[11pt,a4paper]{moderncv}
+
+% moderncv themes
+%\moderncvtheme[blue]{casual}                 % optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
+\moderncvtheme[blue]{classic}                % idem
+
+\usepackage[T1]{fontenc}
+% character encoding
+\usepackage[utf8x]{inputenc}                   % replace by the encoding you are using
+\usepackage[italian]{babel}
+
+% adjust the page margins
+\usepackage[scale=0.79]{geometry}
+\recomputelengths                             % required when changes are made to page layout lengths
+
+\fancyfoot{} % clear all footer fields
+\fancyfoot[LE,RO]{\thepage}           % page number in "outer" position of footer line
+\fancyfoot[RE,LO]{\footnotesize } % other info in "inner" position of footer line
+
+% personal data
+\firstname{Abderraouf}
+\familyname{Makhlouf}
+\title{Développeur Full-stack}               % optional, remove the line if not wanted
+ 
+%\address{via Palazzon 7, Riese Pio X}{31039 Treviso, Italy}    % optional, remove the line if not wanted
+\mobile{+33~07~81~43~98~81}                    % optional, remove the line if not wanted
+%\phone{+385 92 2201317}                      % optional, remove the line if not wanted
+%\fax{312 996 1491}                          % optional, remove the line if not wanted
+\email{makhlouf.raouf@gmail.com}                      % optional, remove the line if not wanted
+%\homepage{http://medium.com/@makhlouf.raouf}                         % optional, remove / comment the line if not wanted
+\social[linkedin]{abderraoufmakhlouf}                        % optional, remove / comment the line if not wanted
+\social[twitter]{Raouf_Mak}                             % optional, remove / comment the line if not wanted
+\social[github]{Raouf25}
+%\extrainfo{https://medium.com/@makhlouf.raouf} % optional, remove the line if not wanted
+\photo[84pt]{picture2}          % '64pt' is the height the picture must be resized to and 'picture' is the name of the picture file; optional, remove the line if not wanted
+\\
+\\
+%\quote{"Success is the ability to go from failure to failure without losing your enthusiasm." -- Winston Churchill}                 % optional, remove the line if not wanted
+
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+\maketitle
+
+\vspace{-10mm}
+
+%Section
+%\section{Info}
+%\cvcomputer{Born}{\small March 30th, 1985 at Zagreb (Croatia)\normalsize}{Citizenship}{\small Croatian\normalsize}
+%\cvcomputer{Additional Address}{J.Salvadora 14, Ciglenica, 44320 Kutina, Croatia}{Driving License}{\small B\normalsize}
+%\cvcomputer{LinkedIn}{\small \url{http://it.linkedin.com/in/goivan}\normalsize}{Elance}{\small \url{http://ntrp.elance.com}\normalsize}
+%\cvcomputer{Blog}{\small \url{http://ntrpivan.blogspot.com}\normalsize}{Skype}{\small ivan.ntrp}
+
+%\vspace{-4mm}
+
+%Section
+%\section{Desidered Employment and Current Skills}
+%\cvline{}{\Large System Administrator, DBA, Programmer, Consultant}
+%\cvline{}{\small Over the years, thanks to my thirst for knowledge, I have gained extensive experience in computer science ranging from operating systems to programming languages ​​and platforms upon which the latter are based. Along this path I have continued to improve my approach to problems always trying to implement optimal, generalized and reusable solutions (OOP, Design Patterns). In some academic work opportunities I've been able to demonstrate excellent teamwork skills and capability to collaborate with external groups. Another virtue I possess is the ability to solve almost any computer problem thanks to the excellent information gathering skills and the many years of experience in the computer science field.}
+
+%\vspace{-4mm}
+\vspace{3.5mm}
+
+
+%Section
+
+
+\section{Compétences techniques}
+\cvitem{Langage}{Java, JavaScript, TypeScript, SQL}
+\cvitem{Frameworks}{Spring Boot, Spring, Hibernate, Liquibase, VueJs}
+\cvitem{Otuils}{Apache Kafka, Git, Maven, Jenkins, Sonar, Doker, Github }
+\cvitem{Méthodologie}{Agile scrum, TDD, BDD}
+
+
+\vspace{2.5mm}
+
+%Section
+\section{Experience professionnelle}
+\vspace{1.5mm}
+
+
+
+
+ 
+\subsection{Adeo -- Consultant Développeur Full stack}
+  
+ 
+\cventry{11/20--06/22}{Mise en place d'une application B2B pour calculer les prix intersociétés Adeo}{}{}{}{  
+\begin{itemize}%
+\item Conception et Développement  d'application en architecture micro-services 
+\item Implémentation des flux Kafka
+\item Assurer la CI/CD backend et frontend
+\begin{itemize}% 
+  \item	Implémenter le module d'authentification avec OpenId connect en spring service
+  \item	Participer à l'implémentation des composants front-end en Vue-Js
+  \item	Valider des merges request
+\end{itemize}
+ \begin{itemize}%
+  \item Environnement technique: VueJs, Javascript, Kafka, Java 8, Docker, Spring Boot, Spring Security, Swagger, Open Api, Git, Gitlab, Github
+  \end{itemize}
+\end{itemize}}
+\vspace{2.5mm}
+
+
+%\cventry{02/17--08/18}{Mise en place d'un portail web pour noter les fournisseurs }{Adeo}{Ronchin}{}{ %
+%Développer une API REST sécurisée pour :%
+%\begin{itemize}%
+%\item Accompagnement des développeurs junior
+%\item Maintenance applicative
+%\item Développement des nouvelles fonctionnalités:
+%\begin{itemize}%
+%  \item Approvisionner automatiquement les achats 
+%  \item	Générer les statistiques associées à l'approvisionnement 
+%  \item	Importer/Expoter des fichiers excel 
+%\end{itemize}
+% \begin{itemize}%
+%  \item Environnement technique: Javascript, Java 8, SQL, Spring Boot, Spring Security, Swagger, Liquibase, %Git
+  %\end{itemize}
+%\end{itemize}}
+
+
+
+%\cventry{07/17--01/18}{Gestion des lettres de crédit 'Gest'LC'}{Adeo}{Ronchin}{}{ %
+%Automatiser des routines pour la gestion des lettres de crédit(moyen de paiement inter-bancaire) :%
+%\begin{itemize}%
+%\item Conception de la base de données.
+%\item Développement des batchs pour consommer les données de ESB (enterprise service bus).
+%\item Développement des batchs pour alerter les acteurs par e-mail.
+ %\begin{itemize}%
+ % \item Méthodologie de travail: Agile scrum
+%  \item Environnement technique: Java 8, SQL, Spring Boot, Spring Batch, Liquibase, GitLab
+%  \end{itemize}
+%\end{itemize}}
+
+
+
+\cventry{11/18--10/20}{Optimisation des coûts de transport maritime 'THETIS'}{}{}{}{ %
+Conception et développement d’une application web pour l’optimisation des coûts de transport maritime:%
+\begin{itemize}%
+%\item Calculer les frais de port en se basant sur des normes mondiales de logistique « ATLAS »
+\item Développement et réalisation des modules métiers 
+%\item Conception d’une base de données permettant de sécuriser les mises à jour des tarifs de transport
+\item Conception fonctionnelle UML
+%\item Réduire le temps de calcul des tarifs 
+%\item Générer les prévisions de commandes afin de faire le suivi opérationnel des compagnies maritimes. 
+ \begin{itemize}%
+  \item Méthodologie de travail: Agile scrum
+  \item Environnement technique: Java 8, SQL, Spring Boot, Spring Data, Swagger, Liquibase
+  \end{itemize}
+\end{itemize}}
+
+\vspace{2.5mm}
+
+
+
+\subsection{Auchan -- Consultant Développeur Full stack}
+%Tempo est le nouveau Responsable Commande Client Omnicanal des BU Leroy Merlin.
+
+%Tempo est responsable de la partie Achat & Vente de la Commande Client quoi que ce soit en ligne ou en magasin mais il gère également la partie exécution de la Commande Client en gérant toutes les dépendances avec les autres systèmes: approvisionnement, services, paiements, 
+
+\cventry{02/17-10/18}{Développement évolutif d'une application de gestion des tickets de caisse RDO-Ticket}{}{}{}{  
+\begin{itemize}%
+\item Conception et  réalisation des API REST pour la configuration des différents types de caisse.
+\item Réalisation des composants front-end avec Vue-Js 
+\item Maintenance et refactoring des micro-service existants. 
+\item Assurer la CI/CD backend et frontend
+\begin{itemize}
+\end{itemize}
+ \begin{itemize}%
+  \item Environnement technique: Java 11, Docker, Spring Boot, Couchbase, Git, Gitlab, Spring Reactor, Rancher, Kibana, Vue-Js, TypeScript
+  \end{itemize}
+\end{itemize}}
+
+\vspace{2.5mm}
+
+\newpage
+
+
+
+\subsection{Atos Worldline-- Consultant Développeur Java }
+\cventry{10/14--01/17}{Simulateur de déplacement de véhicule 'Connected Vehicle'}{}{}{}{ %
+Assurer la TMA évolutive et correctie d'une application web :%
+\begin{itemize}%
+\item Participation à la conception technique
+\item Développement et réalisation des API REST pour le suivi de consommation de carburant des vehicules
+\item Réalisation des tests unitaires Junit/mockito
+\item Révue de code et validation des merges request 
+\item Rédaction de la documentation technique
+%\item Maintenance d'une API REST qui gère le suivie de consommation de carburant.
+%\item Développement d’un outil multithread contrôlant la gestion des véhicules.
+%\item Intégration de l’API NokiaHere pour définir des trajets aléatoires. 
+ \begin{itemize}%
+ % \item Méthodologie de travail: Cycle en V
+  \item Environnement technique: Java 7, Spring 3, Hibernate, API REST, javascript
+  \end{itemize}
+\end{itemize}}
+%\cventry{09/14--01/16}{Site e-commerce 'e-food Pologne'}{Auchan}{Lille}{}{ %
+%Accompagnement des testeurs à la mise en œuvre d’une démarche de qualité :%
+%\begin{itemize}%
+%\item Spécification de plan de test fonctionnel.
+%\item Implémentation des robots avec Robot Framework pour automatiser les tests fonctionnels coté front avec Selenium2Librar.
+%\item Développement des scripts shell pour intégrer les fichiers de données coté back-end Hypris.
+%  \begin{itemize}%
+%  \item Méthodologie de travail: Agile scrum
+%  \item Environnement technique: Jira, Git, Robot Framework, Selenium2Library, Hybris
+%  \end{itemize}
+%\end{itemize}}
+
+
+
+
+\vspace{2.5mm}
+
+
+
+
+
+%\newpage
+
+\subsection{Eurécia -- Ingénieur Recherche & Développement }
+\cventry{10/13--10/14}{ Automatisation d’une application web en mode SaaS}{Eurécia}{Toulous}{}{ %
+Améliorer le cycle de vie d'une application Software as a Service:%
+\begin{itemize}%
+\item Assurer la migration de gestionnaire de sources SVN à Git.
+\item Assurer la migration de système de buid de Ant à Maven.
+\item Mettre en place l'outil d'integration continue jenkins. 
+\item Analyse et optimisations de code Java à l’aide de plugin Sonar de Jenkins
+ \begin{itemize}%
+  \item Méthodologie de travail: Agil scrum
+  \item Environnement technique: svn, Git, Maven, Java, Jenkins, Sonar
+  \end{itemize}
+\end{itemize}}
+\vspace{2.5mm}
+
+%Section
+\section{Formation}
+\cventry{2013--2014}{Master 2}{spécialité développement de logiciels}{}{\textit{Université Paul Sabatier (Toulouse III), France}}{}  % arguments 3 to 6 can be left empty
+\cventry{2010--2013}{Diplôme ingénieur en informatique}{spécialité informatique pour la finance}{}{\textit{Ecole Nationale des Sciences Informatiques, Tunisie}}{}
+\cventry{2008--2010}{Diplôme d’institut préparatoire aux études d’ingénieurs}{spécialité Physique-Technologiques}{}{\textit{Institut Préparatoire aux Etudes d’Ingénieurs de Manar, Tunisie}}{}
+
+%\vspace{-3mm}
+\vspace{2.5mm}
+%Section
+\section{Langues}
+%\cvitemwithcomment{Anglais}{Courant}{Toeic XXX}
+\cvitemwithcomment{Anglais}{Courant}{ }
+\cvitemwithcomment{Français}{Courant}{ }
+
+
+
+\end{document}
